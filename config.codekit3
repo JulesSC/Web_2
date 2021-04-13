@@ -37,6 +37,32 @@
       "oAP" : "\/deploy\/hero.html",
       "oF" : 0
     },
+    "\/deploy\/img\/footer\/location.png" : {
+      "ft" : 32768,
+      "iS" : 561,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/footer\/location.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/footer\/phone.png" : {
+      "ft" : 32768,
+      "iS" : 347,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/footer\/phone.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/gallery\/left.jpg" : {
       "ft" : 16384,
       "iS" : 161125,
@@ -71,7 +97,7 @@
       "oAP" : "\/deploy\/img\/gallery\/upper.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
