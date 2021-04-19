@@ -2,5 +2,11 @@
     Hero
 ============= */
 #hero{
-    
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero .";
+
+    >div{
+        grid-area: hero;
+    }
 }
