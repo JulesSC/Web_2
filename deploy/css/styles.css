@@ -427,6 +427,20 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+header > div {
+  grid-area: header;
+}
+
 /* =============
     Footer
 ============= */
