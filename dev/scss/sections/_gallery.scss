@@ -2,5 +2,15 @@
     Gallery
 ============= */
 #gallery{
-    
+    ul{
+        display: grid;
+        li{
+            img{
+                width: 100%;
+            }
+        }
+        #gallery-3{
+            display: none;
+        }
+    }
 }

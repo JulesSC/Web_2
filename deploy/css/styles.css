@@ -496,6 +496,16 @@ footer > div {
 /* =============
     Gallery
 ============= */
+#gallery ul {
+  display: grid;
+}
+#gallery ul li img {
+  width: 100%;
+}
+#gallery ul #gallery-3 {
+  display: none;
+}
+
 /* =============
     New
 ============= */
