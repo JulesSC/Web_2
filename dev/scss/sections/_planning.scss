@@ -2,11 +2,15 @@
     Planning
 ============= */
 #planning{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". planning .";
-
-    >div{
-        grid-area: planning;
+    ul{
+        li{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". planning-content .";
+            
+            >div{
+                grid-area: planning-content;  
+            }
+        }
     }
 }
