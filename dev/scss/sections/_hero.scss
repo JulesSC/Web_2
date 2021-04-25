@@ -1,16 +1,55 @@
 /* =============
     Hero
 ============= */
-#hero{
-    ul{
-        li{
-            a{
+#hero {
+    #xlarge{
+        @include xl{
+            display: grid;
+            grid-template-columns: auto 1440px auto;
+            grid-template-areas: ". hero-ul ."
+        }
+
+        >div {
+            grid-area: hero-ul;
+    
+            @include md{
                 display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". hero-content .";
-                
-                div{
-                    grid-area: hero-content;
+                grid-template-columns: 30% auto;
+                grid-template-areas: "title details";
+            }
+            
+            @include lg{
+                grid-template-columns: 50% auto;
+            }
+    
+            #title{
+                grid-area: title;
+    
+                li {
+                    a {
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas: ". hero-content .";
+    
+                        >div {
+                            grid-area: hero-content;
+                        }
+                    }
+                }
+            }
+            #details{
+                grid-area: details;
+    
+                li {
+                    a {
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas: ". hero-content .";
+    
+                        >div {
+                            grid-area: hero-content;
+                        }
+                    }
                 }
             }
         }

@@ -1,19 +1,127 @@
 /* =============
     New
 ============= */
-#new {
+#new{
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". new-ul ."
+    }
+    
+    >div{
+        grid-area: new-ul;
+    }
+    
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "new-one new-two"
+                                 "new-three new-four"
+                                 "new-five";
+        }
+        
+        @include lg{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: "new-one new-two"
+                                 "new-three new-four"
+                                 "new-five";
+        }
+        
+        >div{
+            @include md{
+                display: grid;
+                grid-template-columns: 8px auto 8px;
+                grid-template-areas: ". li .";
+    
+                li{
+                    grid-area: li;
+                }
+            }
+        }
 
-    ul {
-        li {
-            img {
+        #new-one{
+            grid-area: new-one;
+
+            img{
                 width: 100%;
             }
-            section {
+
+            section{
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". new .";
 
-                >div {
+                >div{
+                    grid-area: new;
+                }
+            }
+        }
+        #new-two{
+            grid-area: new-two;
+
+            img{
+                width: 100%;
+            }
+
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". new .";
+
+                >div{
+                    grid-area: new;
+                }
+            }
+        }
+        #new-three{
+            grid-area: new-three;
+
+            img{
+                width: 100%;
+            }
+
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". new .";
+
+                >div{
+                    grid-area: new;
+                }
+            }
+        }
+        #new-four{
+            grid-area: new-four;
+
+            img{
+                width: 100%;
+            }
+
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". new .";
+
+                >div{
+                    grid-area: new;
+                }
+            }
+        }
+        #new-five{
+            grid-area: new-five;
+
+            img{
+                width: 100%;
+            }
+
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". new .";
+
+                >div{
                     grid-area: new;
                 }
             }

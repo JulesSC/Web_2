@@ -2,15 +2,50 @@
     Gallery
 ============= */
 #gallery{
-    ul{
+    @include xl{
         display: grid;
-        li{
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". gallery-ul ."
+    }
+    
+    ul{
+        grid-area: gallery-ul;
+        
+        display: grid;
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "gallery-1 gallery-2";
+        }
+        @include lg{
+            grid-template-columns: 75% auto;
+        }
+        @include xl{
+            grid-template-areas: "gallery-1 gallery-2"
+                                 "gallery-1 gallery-3";
+        }
+
+        #gallery-1{
+            grid-area: gallery-1;
+            
             img{
                 width: 100%;
             }
         }
+        #gallery-2{
+            grid-area: gallery-2;
+
+            img{
+                width: 100%;
+            }
+        }
+
         #gallery-3{
             display: none;
+            @include xl{
+                display: list-item;
+            }
         }
     }
 }
