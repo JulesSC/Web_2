@@ -624,7 +624,7 @@ footer > div {
 @media (min-width: 768px) {
   #new ul {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: auto auto;
     grid-template-areas: "new-one new-two" "new-three new-four" "new-five";
   }
 }
