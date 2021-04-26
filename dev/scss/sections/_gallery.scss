@@ -27,14 +27,25 @@
         }
 
         #gallery-1{
-            grid-area: gallery-1;
+            
+            @include md{
+                grid-area: gallery-1;
+            }
+            @include lg{
+                grid-area: gallery-1;
+            }
             
             img{
                 width: 100%;
             }
         }
         #gallery-2{
-            grid-area: gallery-2;
+            @include md{
+                grid-area: gallery-2;
+            }
+            @include lg{
+                grid-area: gallery-2;
+            }
 
             img{
                 width: 100%;
@@ -43,6 +54,7 @@
 
         #gallery-3{
             display: none;
+            
             @include xl{
                 display: list-item;
             }

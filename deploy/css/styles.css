@@ -617,14 +617,28 @@ footer > div #follow {
     grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3";
   }
 }
-#gallery ul #gallery-1 {
-  grid-area: gallery-1;
+@media (min-width: 768px) {
+  #gallery ul #gallery-1 {
+    grid-area: gallery-1;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery ul #gallery-1 {
+    grid-area: gallery-1;
+  }
 }
 #gallery ul #gallery-1 img {
   width: 100%;
 }
-#gallery ul #gallery-2 {
-  grid-area: gallery-2;
+@media (min-width: 768px) {
+  #gallery ul #gallery-2 {
+    grid-area: gallery-2;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery ul #gallery-2 {
+    grid-area: gallery-2;
+  }
 }
 #gallery ul #gallery-2 img {
   width: 100%;
