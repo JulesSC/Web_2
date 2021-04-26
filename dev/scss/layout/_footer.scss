@@ -1,12 +1,43 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
-    >div{
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". footer ."
+    }
+
+    >div {
         grid-area: footer;
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "locations news"
+                                 "locations follow";
+        }
+
+        @include lg {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: "locations news follow";
+        }
+
+        #locations {
+            grid-area: locations;
+        }
+
+        #news {
+            grid-area: news;
+        }
+
+        #follow {
+            grid-area: follow;
+        }
     }
 }
