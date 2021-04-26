@@ -1,128 +1,131 @@
 /* =============
     New
 ============= */
-#new{
-    @include xl{
+#new {
+    @include xl {
         display: grid;
         grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". new-ul ."
+        grid-template-areas: ". new-div ."
     }
-    
-    >div{
-        grid-area: new-ul;
-    }
-    
-    ul{
-        @include md{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-areas: "new-one new-two"
-                                 "new-three new-four"
-                                 "new-five";
-        }
-        
-        @include lg{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-areas: "new-one new-two"
-                                 "new-three new-four"
-                                 "new-five";
-        }
-        
-        >div{
-            @include md{
+
+    >div {
+        grid-area: new-div;
+
+        ul {
+            @include md {
                 display: grid;
-                grid-template-columns: 8px auto 8px;
-                grid-template-areas: ". li .";
-    
-                li{
-                    grid-area: li;
+                grid-template-columns: auto 16px auto;
+                grid-template-areas: "new-one . new-two"
+                                     "new-three . new-four"
+                                     "new-five . .";
+            }
+
+            @include lg {
+                display: grid;
+                grid-template-columns: auto 16px auto 16px auto;
+                grid-template-areas: "new-one . new-two . new-three"
+                                     "new-four . new-five . ."
+            }
+
+            #new-one {
+                @include md {
+                    grid-area: new-one;
+                }
+
+                @include lg {
+                    grid-area: new-one;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new .";
+
+                    >div {
+                        grid-area: new;
+                    }
                 }
             }
-        }
 
-        #new-one{
-            grid-area: new-one;
+            #new-two {
+                @include md {
+                    grid-area: new-two;
+                }
 
-            img{
-                width: 100%;
-            }
+                @include lg {
+                    grid-area: new-two;
+                }
 
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". new .";
+                img {
+                    width: 100%;
+                }
 
-                >div{
-                    grid-area: new;
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new .";
+
+                    >div {
+                        grid-area: new;
+                    }
                 }
             }
-        }
-        #new-two{
-            grid-area: new-two;
 
-            img{
-                width: 100%;
-            }
+            #new-three {
+                grid-area: new-three;
 
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". new .";
+                img {
+                    width: 100%;
+                }
 
-                >div{
-                    grid-area: new;
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new .";
+
+                    >div {
+                        grid-area: new;
+                    }
                 }
             }
-        }
-        #new-three{
-            grid-area: new-three;
 
-            img{
-                width: 100%;
-            }
+            #new-four {
+                grid-area: new-four;
 
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". new .";
+                img {
+                    width: 100%;
+                }
 
-                >div{
-                    grid-area: new;
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new .";
+
+                    >div {
+                        grid-area: new;
+                    }
                 }
             }
-        }
-        #new-four{
-            grid-area: new-four;
 
-            img{
-                width: 100%;
-            }
+            #new-five {
+                grid-area: new-five;
 
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". new .";
-
-                >div{
-                    grid-area: new;
+                img {
+                    width: 100%;
                 }
-            }
-        }
-        #new-five{
-            grid-area: new-five;
 
-            img{
-                width: 100%;
-            }
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". new .";
 
-            section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". new .";
-
-                >div{
-                    grid-area: new;
+                    >div {
+                        grid-area: new;
+                    }
                 }
             }
         }
