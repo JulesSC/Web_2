@@ -2,55 +2,34 @@
     Hero
 ============= */
 #hero {
-    #xlarge{
-        @include xl{
+    ul{
+        @include md{
             display: grid;
-            grid-template-columns: auto 1440px auto;
-            grid-template-areas: ". hero-ul ."
+            grid-template-columns: 40% auto;
+        }
+        
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+        
+        li{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero-content .";
+
+            a{
+                grid-area: hero-content;
+            }
         }
 
-        >div {
-            grid-area: hero-ul;
-    
-            @include md{
-                display: grid;
-                grid-template-columns: 30% auto;
-                grid-template-areas: "title details";
+        #hero-sub-1{
+            @include xl{
+                grid-template-columns: auto 480px 16px;
             }
-            
-            @include lg{
-                grid-template-columns: 50% auto;
-            }
-    
-            #title{
-                grid-area: title;
-    
-                li {
-                    a {
-                        display: grid;
-                        grid-template-columns: 16px auto 16px;
-                        grid-template-areas: ". hero-content .";
-    
-                        >div {
-                            grid-area: hero-content;
-                        }
-                    }
-                }
-            }
-            #details{
-                grid-area: details;
-    
-                li {
-                    a {
-                        display: grid;
-                        grid-template-columns: 16px auto 16px;
-                        grid-template-areas: ". hero-content .";
-    
-                        >div {
-                            grid-area: hero-content;
-                        }
-                    }
-                }
+        }
+        #hero-sub-2{
+            @include xl{
+                grid-template-columns: 16px 480px auto;
             }
         }
     }

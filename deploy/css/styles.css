@@ -495,6 +495,11 @@ footer > div #follow {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
+@media (min-width: 1440px) {
+  #search {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 #search > div {
   grid-area: search;
 }
@@ -502,49 +507,34 @@ footer > div #follow {
 /* =============
     Hero
 ============= */
-@media (min-width: 1440px) {
-  #hero #xlarge {
-    display: grid;
-    grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". hero-ul .";
-  }
-}
-#hero #xlarge > div {
-  grid-area: hero-ul;
-}
 @media (min-width: 768px) {
-  #hero #xlarge > div {
+  #hero ul {
     display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-areas: "title details";
+    grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
-  #hero #xlarge > div {
+  #hero ul {
     grid-template-columns: 50% auto;
   }
 }
-#hero #xlarge > div #title {
-  grid-area: title;
-}
-#hero #xlarge > div #title li a {
+#hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
-#hero #xlarge > div #title li a > div {
+#hero ul li a {
   grid-area: hero-content;
 }
-#hero #xlarge > div #details {
-  grid-area: details;
+@media (min-width: 1440px) {
+  #hero ul #hero-sub-1 {
+    grid-template-columns: auto 480px 16px;
+  }
 }
-#hero #xlarge > div #details li a {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero-content .";
-}
-#hero #xlarge > div #details li a > div {
-  grid-area: hero-content;
+@media (min-width: 1440px) {
+  #hero ul #hero-sub-2 {
+    grid-template-columns: 16px 480px auto;
+  }
 }
 
 /* =============
