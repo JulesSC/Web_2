@@ -592,46 +592,32 @@ footer > div #follow {
 }
 @media (min-width: 768px) {
   #gallery ul {
-    display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "gallery-1 gallery-2";
   }
 }
 @media (min-width: 1024px) {
   #gallery ul {
-    grid-template-columns: 75% auto;
+    grid-template-columns: 60% auto;
   }
 }
 @media (min-width: 1440px) {
   #gallery ul {
+    grid-template-columns: 65% auto;
     grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3";
   }
 }
-@media (min-width: 768px) {
+#gallery ul li img {
+  width: 100%;
+}
+@media (min-width: 1440px) {
   #gallery ul #gallery-1 {
     grid-area: gallery-1;
   }
 }
-@media (min-width: 1024px) {
-  #gallery ul #gallery-1 {
-    grid-area: gallery-1;
-  }
-}
-#gallery ul #gallery-1 img {
-  width: 100%;
-}
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   #gallery ul #gallery-2 {
     grid-area: gallery-2;
   }
-}
-@media (min-width: 1024px) {
-  #gallery ul #gallery-2 {
-    grid-area: gallery-2;
-  }
-}
-#gallery ul #gallery-2 img {
-  width: 100%;
 }
 #gallery ul #gallery-3 {
   display: none;

@@ -14,41 +14,33 @@
         display: grid;
         
         @include md{
-            display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: "gallery-1 gallery-2";
         }
         @include lg{
-            grid-template-columns: 75% auto;
+            grid-template-columns: 60% auto;
         }
         @include xl{
+            grid-template-columns: 65% auto;
             grid-template-areas: "gallery-1 gallery-2"
                                  "gallery-1 gallery-3";
         }
 
-        #gallery-1{
-            
-            @include md{
-                grid-area: gallery-1;
-            }
-            @include lg{
-                grid-area: gallery-1;
-            }
-            
+        li{
             img{
                 width: 100%;
             }
         }
-        #gallery-2{
-            @include md{
-                grid-area: gallery-2;
-            }
-            @include lg{
-                grid-area: gallery-2;
-            }
 
-            img{
-                width: 100%;
+        #gallery-1{
+            
+            @include xl{
+                grid-area: gallery-1;
+            }
+            
+        }
+        #gallery-2{
+            @include xl{
+                grid-area: gallery-2;
             }
         }
 
