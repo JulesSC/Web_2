@@ -2,39 +2,32 @@
     Planning
 ============= */
 #planning{
-    @include xl{
+    @include md{
         display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". planning .";
+    }
+    
+    @include xl{
         grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". planning-ul ."
     }
 
     ul{
-        grid-area: planning-ul;
+        display: grid;
+        gap: 16px;
 
         @include md{
             display: grid;
-            grid-template-columns: 16px auto 16px auto 16px;
-            grid-template-areas: ". trade . check .";
+            grid-template-columns: 50% auto;
+            grid-area: planning;
         }
 
-        #trade{
-            grid-area: trade;
-            
+        li{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". planning-content .";
-            
-            >div{
-                grid-area: planning-content;  
-            }
-        }
-
-        #check{
-            grid-area: check;
-            
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". planning-content .";
+            background-color: black;
+            color: white;
             
             >div{
                 grid-area: planning-content;  

@@ -11,6 +11,8 @@
         @include lg{
             grid-template-columns: 50% auto;
         }
+
+        background-color:white;
         
         li{
             display: grid;
@@ -22,12 +24,12 @@
             }
         }
 
-        #hero-sub-1{
+        #hero-sub-one{
             @include xl{
                 grid-template-columns: auto 480px 16px;
             }
         }
-        #hero-sub-2{
+        #hero-sub-two{
             @include xl{
                 grid-template-columns: 16px 480px auto;
             }

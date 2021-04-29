@@ -507,6 +507,9 @@ footer > div #follow {
 /* =============
     Hero
 ============= */
+#hero ul {
+  background-color: white;
+}
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
@@ -527,12 +530,12 @@ footer > div #follow {
   grid-area: hero-content;
 }
 @media (min-width: 1440px) {
-  #hero ul #hero-sub-1 {
+  #hero ul #hero-sub-one {
     grid-template-columns: auto 480px 16px;
   }
 }
 @media (min-width: 1440px) {
-  #hero ul #hero-sub-2 {
+  #hero ul #hero-sub-two {
     grid-template-columns: 16px 480px auto;
   }
 }
@@ -540,39 +543,37 @@ footer > div #follow {
 /* =============
     Planning
 ============= */
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   #planning {
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". planning .";
+  }
+}
+@media (min-width: 1440px) {
+  #planning {
     grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". planning-ul .";
   }
 }
 #planning ul {
-  grid-area: planning-ul;
+  display: grid;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   #planning ul {
     display: grid;
-    grid-template-columns: 16px auto 16px auto 16px;
-    grid-template-areas: ". trade . check .";
+    grid-template-columns: 50% auto;
+    grid-area: planning;
   }
 }
-#planning ul #trade {
-  grid-area: trade;
+#planning ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". planning-content .";
+  background-color: black;
+  color: white;
 }
-#planning ul #trade > div {
-  grid-area: planning-content;
-}
-#planning ul #check {
-  grid-area: check;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". planning-content .";
-}
-#planning ul #check > div {
+#planning ul li > div {
   grid-area: planning-content;
 }
 
