@@ -2,52 +2,51 @@
     New
 ============= */
 #new {
-    @include xl {
+    @include md{
         display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". new ."
+    }
+    
+    @include xl {
         grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". new-div ."
     }
 
     >div {
-        grid-area: new-div;
+        @include md{
+            grid-area: new;
+        }
 
         ul {
             @include md {
                 display: grid;
-                grid-template-columns: auto 16px auto;
-                grid-template-areas: "new-one . new-two"
-                                     "new-three . new-four"
-                                     "new-five . .";
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: "new-one new-one new-two new-two"
+                                     "new-three new-three new-four new-four"
+                                     ". new-five new-five .";
+                gap: 16px;
             }
-
             @include lg {
-                display: grid;
-                grid-template-columns: auto 16px auto 16px auto;
-                grid-template-areas: "new-one . new-two . new-three"
-                                     "new-four . new-five . ."
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: "new-one new-one new-two new-two new-three new-three"
+                                     ". new-four new-four new-five new-five .";
             }
-
-            #new-one {
-                @include md {
-                    grid-area: new-one;
-                }
-
-                @include lg {
-                    grid-area: new-one;
-                }
-
+            li{
                 img {
                     width: 100%;
                 }
-
                 section {
                     display: grid;
                     grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new .";
-
+                    grid-template-areas: ". new-content .";
                     >div {
-                        grid-area: new;
+                        grid-area: new-content;
                     }
+                }
+            }
+            #new-one {
+                @include md {
+                    grid-area: new-one;
                 }
             }
 
@@ -55,77 +54,23 @@
                 @include md {
                     grid-area: new-two;
                 }
-
-                @include lg {
-                    grid-area: new-two;
-                }
-
-                img {
-                    width: 100%;
-                }
-
-                section {
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new .";
-
-                    >div {
-                        grid-area: new;
-                    }
-                }
             }
 
             #new-three {
-                grid-area: new-three;
-
-                img {
-                    width: 100%;
-                }
-
-                section {
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new .";
-
-                    >div {
-                        grid-area: new;
-                    }
+                @include md {
+                    grid-area: new-three;
                 }
             }
 
             #new-four {
-                grid-area: new-four;
-
-                img {
-                    width: 100%;
-                }
-
-                section {
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new .";
-
-                    >div {
-                        grid-area: new;
-                    }
+                @include md {
+                    grid-area: new-four;
                 }
             }
 
             #new-five {
-                grid-area: new-five;
-
-                img {
-                    width: 100%;
-                }
-
-                section {
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new .";
-
-                    >div {
-                        grid-area: new;
-                    }
+                @include md {
+                    grid-area: new-five;
                 }
             }
         }

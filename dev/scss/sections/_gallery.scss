@@ -5,14 +5,12 @@
     @include xl{
         display: grid;
         grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". gallery-ul ."
+        grid-template-areas: ". gallery ."
     }
     
     ul{
-        grid-area: gallery-ul;
-        
+        grid-area: gallery;
         display: grid;
-        
         @include md{
             grid-template-columns: 50% auto;
         }
@@ -32,11 +30,9 @@
         }
 
         #gallery-1{
-            
             @include xl{
                 grid-area: gallery-1;
-            }
-            
+            }  
         }
         #gallery-2{
             @include xl{
@@ -46,7 +42,6 @@
 
         #gallery-3{
             display: none;
-            
             @include xl{
                 display: list-item;
             }
