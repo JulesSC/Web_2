@@ -5,13 +5,15 @@ footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+    background-color: black;
 
     @include xl{
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     >div {
         grid-area: footer;
+        color: white;
 
         @include md {
             display: grid;

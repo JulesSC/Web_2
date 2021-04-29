@@ -7,7 +7,7 @@
     grid-template-areas: ". search .";
 
     @include xl{
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     >div{

@@ -2,6 +2,8 @@
     New
 ============= */
 #new {
+    background-color: black;
+    
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -9,7 +11,7 @@
     }
     
     @include xl {
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1000px auto;
     }
 
     >div {
@@ -32,6 +34,8 @@
                                      ". new-four new-four new-five new-five .";
             }
             li{
+                background-color: black;
+                color: white;
                 img {
                     width: 100%;
                 }

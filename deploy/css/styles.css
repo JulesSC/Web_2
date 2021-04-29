@@ -435,6 +435,7 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: black;
 }
 @media (min-width: 768px) {
   header {
@@ -452,14 +453,16 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: black;
 }
 @media (min-width: 1440px) {
   footer {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 footer > div {
   grid-area: footer;
+  color: white;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -501,7 +504,7 @@ footer > div {
 }
 @media (min-width: 1440px) {
   #search {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #search > div {
@@ -556,7 +559,7 @@ footer > div {
 }
 @media (min-width: 1440px) {
   #planning {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #planning ul {
@@ -584,11 +587,16 @@ footer > div {
 /* =============
     Gallery
 ============= */
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #gallery {
     display: grid;
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+  }
+}
+@media (min-width: 1440px) {
+  #gallery {
+    grid-template-columns: auto 1350px auto;
   }
 }
 #gallery ul {
@@ -636,6 +644,9 @@ footer > div {
 /* =============
     New
 ============= */
+#new {
+  background-color: black;
+}
 @media (min-width: 768px) {
   #new {
     display: grid;
@@ -645,7 +656,7 @@ footer > div {
 }
 @media (min-width: 1440px) {
   #new {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 @media (min-width: 768px) {
@@ -666,6 +677,10 @@ footer > div {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "new-one new-one new-two new-two new-three new-three" ". new-four new-four new-five new-five .";
   }
+}
+#new > div ul li {
+  background-color: black;
+  color: white;
 }
 #new > div ul li img {
   width: 100%;
