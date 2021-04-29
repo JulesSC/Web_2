@@ -7,9 +7,7 @@ footer {
     grid-template-areas: ". footer .";
 
     @include xl{
-        display: grid;
         grid-template-columns: auto 1440px auto;
-        grid-template-areas: ". footer ."
     }
 
     >div {
@@ -24,20 +22,26 @@ footer {
 
         @include lg {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "locations news follow";
         }
 
         #locations {
-            grid-area: locations;
+            @include md{
+                grid-area: locations;
+            }
         }
 
         #news {
-            grid-area: news;
+            @include md{
+                grid-area: news;
+            }
         }
 
         #follow {
-            grid-area: follow;
+            @include md{
+                grid-area: follow;
+            }
         }
     }
 }

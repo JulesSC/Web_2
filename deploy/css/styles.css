@@ -455,9 +455,7 @@ footer {
 }
 @media (min-width: 1440px) {
   footer {
-    display: grid;
     grid-template-columns: auto 1440px auto;
-    grid-template-areas: ". footer .";
   }
 }
 footer > div {
@@ -473,18 +471,24 @@ footer > div {
 @media (min-width: 1024px) {
   footer > div {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations news follow";
   }
 }
-footer > div #locations {
-  grid-area: locations;
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
 }
-footer > div #news {
-  grid-area: news;
+@media (min-width: 768px) {
+  footer > div #news {
+    grid-area: news;
+  }
 }
-footer > div #follow {
-  grid-area: follow;
+@media (min-width: 768px) {
+  footer > div #follow {
+    grid-area: follow;
+  }
 }
 
 /* =============
