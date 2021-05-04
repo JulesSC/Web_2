@@ -652,7 +652,7 @@ footer > div {
 }
 #gallery ul #gallery-1 {
   background-image: url("../img/gallery/left.jpg");
-  background-position: 20% 45%;
+  background-position: right 80%;
 }
 @media (min-width: 1440px) {
   #gallery ul #gallery-1 {
@@ -661,6 +661,7 @@ footer > div {
 }
 #gallery ul #gallery-2 {
   background-image: url("../img/gallery/upper.jpg");
+  background-position: center bottom;
 }
 @media (min-width: 1440px) {
   #gallery ul #gallery-2 {

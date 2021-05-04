@@ -38,15 +38,15 @@
         #gallery-1{
             
             background-image: url("../img/gallery/left.jpg");
-            background-position: 20% 45%;
+            background-position: right 80%;
 
             @include xl{
                 grid-area: gallery-1;
             }
         }
         #gallery-2{
-            
             background-image: url("../img/gallery/upper.jpg");
+            background-position: center bottom;
 
             @include xl{
                 grid-area: gallery-2;
