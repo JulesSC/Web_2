@@ -435,7 +435,7 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
-  background-color: black;
+  background-color: #000;
 }
 @media (min-width: 768px) {
   header {
@@ -453,7 +453,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: black;
+  background-color: #000;
 }
 @media (min-width: 1440px) {
   footer {
@@ -462,7 +462,7 @@ footer {
 }
 footer > div {
   grid-area: footer;
-  color: white;
+  color: #fff;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -501,6 +501,7 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  background-color: #fff;
 }
 @media (min-width: 1440px) {
   #search {
@@ -514,8 +515,31 @@ footer > div {
 /* =============
     Hero
 ============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  background-position: center 675px;
+  background-size: cover;
+  height: 480px;
+}
+@media (min-width: 768px) {
+  #hero {
+    background-position: center 850px;
+    height: 580px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-position: center 999px;
+    height: 730px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero {
+    height: 100vh;
+  }
+}
 #hero ul {
-  background-color: white;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   #hero ul {
@@ -577,8 +601,8 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". planning-content .";
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 #planning ul li > div {
   grid-area: planning-content;
@@ -679,8 +703,8 @@ footer > div {
   }
 }
 #new > div ul li {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 #new > div ul li img {
   width: 100%;
