@@ -56,6 +56,16 @@
                 background-size: cover;
                 height: 160px;
 
+                // grid-template-rows: repeat(1, 160px);
+                // grid-template-areas: "img-1";
+
+                // #img-1{
+                //     grid-area: img-1;
+                //     background-image: url("../img/new/one.jpg");
+                //     background-position: center;
+                //     background-size: cover; 
+                // }
+
                 @include md {
                     grid-area: new-one;
                 }
