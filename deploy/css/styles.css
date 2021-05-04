@@ -626,10 +626,14 @@ footer > div {
 #gallery ul {
   grid-area: gallery;
   display: grid;
+  grid-template-rows: repeat(3, 355px);
+  grid-template-areas: "gallery-1" "gallery-1" "gallery-2";
 }
 @media (min-width: 768px) {
   #gallery ul {
     grid-template-columns: 50% auto;
+    grid-template-rows: repeat(1, 590px);
+    grid-template-areas: "gallery-1 gallery-2";
   }
 }
 @media (min-width: 1024px) {
@@ -640,21 +644,21 @@ footer > div {
 @media (min-width: 1440px) {
   #gallery ul {
     grid-template-columns: 65% auto;
+    grid-template-rows: repeat(2, 375px);
     grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3";
   }
 }
-#gallery ul li img {
-  width: 100%;
+#gallery ul #gallery-1 {
+  grid-area: gallery-1;
+  background-image: url("../img/gallery/left.jpg");
+  background-position: center bottom;
+  background-size: cover;
 }
-@media (min-width: 1440px) {
-  #gallery ul #gallery-1 {
-    grid-area: gallery-1;
-  }
-}
-@media (min-width: 1440px) {
-  #gallery ul #gallery-2 {
-    grid-area: gallery-2;
-  }
+#gallery ul #gallery-2 {
+  grid-area: gallery-2;
+  background-image: url("../img/gallery/upper.jpg");
+  background-position: center;
+  background-size: cover;
 }
 #gallery ul #gallery-3 {
   display: none;
@@ -662,6 +666,9 @@ footer > div {
 @media (min-width: 1440px) {
   #gallery ul #gallery-3 {
     display: list-item;
+    background-image: url("../img/gallery/lower.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -687,6 +694,9 @@ footer > div {
   #new > div {
     grid-area: new;
   }
+}
+#new > div h1 {
+  color: #fff;
 }
 @media (min-width: 768px) {
   #new > div ul {

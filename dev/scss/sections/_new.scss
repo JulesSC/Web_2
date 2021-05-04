@@ -18,6 +18,10 @@
         @include md{
             grid-area: new;
         }
+        
+        h1{
+            color: $white;
+        }
 
         ul {
             @include md {

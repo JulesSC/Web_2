@@ -49,33 +49,33 @@
     },
     "\/deploy\/img\/gallery\/left.jpg" : {
       "ft" : 16384,
-      "iS" : 161125,
+      "iS" : 449330,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/left.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/gallery\/lower.jpg" : {
       "ft" : 16384,
-      "iS" : 34425,
+      "iS" : 398946,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/lower.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/gallery\/upper.jpg" : {
       "ft" : 16384,
-      "iS" : 47185,
+      "iS" : 717094,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/upper.jpg",
@@ -96,7 +96,7 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/hero\/Hero.jpg" : {
+    "\/deploy\/img\/hero\/hero.jpg" : {
       "ft" : 16384,
       "iS" : 316116,
       "jF" : 0,
@@ -137,7 +137,7 @@
     },
     "\/deploy\/img\/new\/five.jpg" : {
       "ft" : 16384,
-      "iS" : 25589,
+      "iS" : 764449,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/five.jpg",
@@ -150,7 +150,7 @@
     },
     "\/deploy\/img\/new\/four.jpg" : {
       "ft" : 16384,
-      "iS" : 22568,
+      "iS" : 1133627,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/four.jpg",
@@ -163,7 +163,7 @@
     },
     "\/deploy\/img\/new\/one.jpg" : {
       "ft" : 16384,
-      "iS" : 22059,
+      "iS" : 1501379,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/one.jpg",
@@ -176,7 +176,7 @@
     },
     "\/deploy\/img\/new\/three.jpg" : {
       "ft" : 16384,
-      "iS" : 15724,
+      "iS" : 402650,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/three.jpg",
@@ -189,7 +189,7 @@
     },
     "\/deploy\/img\/new\/two.jpg" : {
       "ft" : 16384,
-      "iS" : 25363,
+      "iS" : 1948600,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/new\/two.jpg",
@@ -208,12 +208,12 @@
       "oAP" : "\/deploy\/img\/tinified.zip",
       "oF" : 0
     },
-    "\/deploy\/img\/tinified\/martin-katler-0oOmdOHY0f8-unsplash.jpg" : {
+    "\/deploy\/img\/tinified\/five.jpg" : {
       "ft" : 16384,
-      "iS" : 398946,
+      "iS" : 25589,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-0oOmdOHY0f8-unsplash.jpg",
+      "oAP" : "\/deploy\/img\/tinified\/five.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -221,12 +221,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/tinified\/martin-katler-1ouLyK5oykg-unsplash.jpg" : {
+    "\/deploy\/img\/tinified\/four.jpg" : {
       "ft" : 16384,
-      "iS" : 1501379,
+      "iS" : 22568,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-1ouLyK5oykg-unsplash.jpg",
+      "oAP" : "\/deploy\/img\/tinified\/four.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -234,12 +234,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/tinified\/martin-katler-6Hqh2B8dpuo-unsplash.jpg" : {
+    "\/deploy\/img\/tinified\/left.jpg" : {
       "ft" : 16384,
-      "iS" : 1948600,
+      "iS" : 161125,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-6Hqh2B8dpuo-unsplash.jpg",
+      "oAP" : "\/deploy\/img\/tinified\/left.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -247,51 +247,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/tinified\/martin-katler-7gAHUsApWNc-unsplash.jpg" : {
+    "\/deploy\/img\/tinified\/lower.jpg" : {
       "ft" : 16384,
-      "iS" : 402650,
+      "iS" : 34425,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-7gAHUsApWNc-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/tinified\/martin-katler-c0PfbKh8gJQ-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 717094,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-c0PfbKh8gJQ-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/tinified\/martin-katler-hsn5zdEc8Ak-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 449330,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-hsn5zdEc8Ak-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/tinified\/martin-katler-iduaTEuSllM-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 1133627,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-iduaTEuSllM-unsplash.jpg",
+      "oAP" : "\/deploy\/img\/tinified\/lower.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -312,12 +273,51 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/tinified\/martin-katler-xO_wA_PEEOE-unsplash.jpg" : {
+    "\/deploy\/img\/tinified\/one.jpg" : {
       "ft" : 16384,
-      "iS" : 764449,
+      "iS" : 22059,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/tinified\/martin-katler-xO_wA_PEEOE-unsplash.jpg",
+      "oAP" : "\/deploy\/img\/tinified\/one.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tinified\/three.jpg" : {
+      "ft" : 16384,
+      "iS" : 15724,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tinified\/three.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tinified\/two.jpg" : {
+      "ft" : 16384,
+      "iS" : 25363,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tinified\/two.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tinified\/upper.jpg" : {
+      "ft" : 16384,
+      "iS" : 47185,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tinified\/upper.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
