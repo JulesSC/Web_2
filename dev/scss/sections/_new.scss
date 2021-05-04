@@ -51,10 +51,10 @@
                 }
             }
             #new-one {
-                background-image: url("../img/new/one.jpg");
-                background-position: center;
-                background-size: cover;
-                height: 160px;
+                // background-image: url("../img/new/one.jpg");
+                // background-position: center;
+                // background-size: cover;
+                // height: 160px;
 
                 // grid-template-rows: repeat(1, 160px);
                 // grid-template-areas: "img-1";
@@ -72,10 +72,10 @@
             }
 
             #new-two {
-                background-image: url("../img/new/two.jpg");
-                background-position: center;
-                background-size: cover;
-                height: 160px;
+                // background-image: url("../img/new/two.jpg");
+                // background-position: center;
+                // background-size: cover;
+                // height: 160px;
 
                 @include md {
                     grid-area: new-two;
@@ -83,10 +83,10 @@
             }
 
             #new-three {
-                background-image: url("../img/new/three.jpg");
-                background-position: center;
-                background-size: cover;
-                height: 160px;
+                // background-image: url("../img/new/three.jpg");
+                // background-position: center;
+                // background-size: cover;
+                // height: 160px;
 
                 @include md {
                     grid-area: new-three;
@@ -94,10 +94,10 @@
             }
 
             #new-four {
-                background-image: url("../img/new/four.jpg");
-                background-position: center;
-                background-size: cover;
-                height: 160px;
+                // background-image: url("../img/new/four.jpg");
+                // background-position: center;
+                // background-size: cover;
+                // height: 160px;
 
                 @include md {
                     grid-area: new-four;
@@ -105,10 +105,10 @@
             }
 
             #new-five {
-                background-image: url("../img/new/five.jpg");
-                background-position: center;
-                background-size: cover;
-                height: 160px;
+                // background-image: url("../img/new/five.jpg");
+                // background-position: center;
+                // background-size: cover;
+                // height: 160px;
 
                 @include md {
                     grid-area: new-five;

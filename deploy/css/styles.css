@@ -626,14 +626,12 @@ footer > div {
 #gallery ul {
   grid-area: gallery;
   display: grid;
-  grid-template-rows: repeat(3, 355px);
-  grid-template-areas: "gallery-1" "gallery-1" "gallery-2";
+  grid-template-rows: 355px 485px;
 }
 @media (min-width: 768px) {
   #gallery ul {
     grid-template-columns: 50% auto;
-    grid-template-rows: repeat(1, 590px);
-    grid-template-areas: "gallery-1 gallery-2";
+    grid-template-rows: 595px;
   }
 }
 @media (min-width: 1024px) {
@@ -648,17 +646,26 @@ footer > div {
     grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3";
   }
 }
-#gallery ul #gallery-1 {
-  grid-area: gallery-1;
-  background-image: url("../img/gallery/left.jpg");
-  background-position: center bottom;
-  background-size: cover;
-}
-#gallery ul #gallery-2 {
-  grid-area: gallery-2;
-  background-image: url("../img/gallery/upper.jpg");
+#gallery ul li {
   background-position: center;
   background-size: cover;
+}
+#gallery ul #gallery-1 {
+  background-image: url("../img/gallery/left.jpg");
+  background-position: 20% 45%;
+}
+@media (min-width: 1440px) {
+  #gallery ul #gallery-1 {
+    grid-area: gallery-1;
+  }
+}
+#gallery ul #gallery-2 {
+  background-image: url("../img/gallery/upper.jpg");
+}
+@media (min-width: 1440px) {
+  #gallery ul #gallery-2 {
+    grid-area: gallery-2;
+  }
 }
 #gallery ul #gallery-3 {
   display: none;
@@ -667,8 +674,7 @@ footer > div {
   #gallery ul #gallery-3 {
     display: list-item;
     background-image: url("../img/gallery/lower.jpg");
-    background-position: center;
-    background-size: cover;
+    grid-area: gallery-3;
   }
 }
 
@@ -724,55 +730,25 @@ footer > div {
 #new > div ul li section > div {
   grid-area: new-content;
 }
-#new > div ul #new-one {
-  background-image: url("../img/new/one.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 160px;
-}
 @media (min-width: 768px) {
   #new > div ul #new-one {
     grid-area: new-one;
   }
-}
-#new > div ul #new-two {
-  background-image: url("../img/new/two.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 160px;
 }
 @media (min-width: 768px) {
   #new > div ul #new-two {
     grid-area: new-two;
   }
 }
-#new > div ul #new-three {
-  background-image: url("../img/new/three.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 160px;
-}
 @media (min-width: 768px) {
   #new > div ul #new-three {
     grid-area: new-three;
   }
 }
-#new > div ul #new-four {
-  background-image: url("../img/new/four.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 160px;
-}
 @media (min-width: 768px) {
   #new > div ul #new-four {
     grid-area: new-four;
   }
-}
-#new > div ul #new-five {
-  background-image: url("../img/new/five.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 160px;
 }
 @media (min-width: 768px) {
   #new > div ul #new-five {

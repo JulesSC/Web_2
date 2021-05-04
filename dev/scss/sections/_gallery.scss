@@ -14,15 +14,11 @@
     ul{
         grid-area: gallery;
         display: grid;
-        grid-template-rows: repeat(3, 355px);
-        grid-template-areas: "gallery-1"
-                             "gallery-1"
-                             "gallery-2";
+        grid-template-rows: 355px 485px;
         
         @include md{
             grid-template-columns: 50% auto;
-            grid-template-rows: repeat(1, 590px);
-            grid-template-areas: "gallery-1 gallery-2";
+            grid-template-rows: 595px;
         }
         @include lg{
             grid-template-columns: 60% auto;
@@ -34,17 +30,27 @@
                                  "gallery-1 gallery-3";
         }
 
-        #gallery-1{
-            grid-area: gallery-1;
-            background-image: url("../img/gallery/left.jpg");
-            background-position: center bottom;
-            background-size: cover; 
-        }
-        #gallery-2{
-            grid-area: gallery-2;
-            background-image: url("../img/gallery/upper.jpg");
+        li{
             background-position: center;
             background-size: cover; 
+        }
+
+        #gallery-1{
+            
+            background-image: url("../img/gallery/left.jpg");
+            background-position: 20% 45%;
+
+            @include xl{
+                grid-area: gallery-1;
+            }
+        }
+        #gallery-2{
+            
+            background-image: url("../img/gallery/upper.jpg");
+
+            @include xl{
+                grid-area: gallery-2;
+            }
         }
 
         #gallery-3{
@@ -52,8 +58,7 @@
             @include xl{
                 display: list-item;
                 background-image: url("../img/gallery/lower.jpg");
-                background-position: center;
-                background-size: cover; 
+                grid-area: gallery-3;
             }
         }
     }
