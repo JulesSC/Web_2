@@ -716,9 +716,6 @@ footer > div {
   background-color: #000;
   color: #fff;
 }
-#new > div ul li img {
-  width: 100%;
-}
 #new > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -727,25 +724,55 @@ footer > div {
 #new > div ul li section > div {
   grid-area: new-content;
 }
+#new > div ul #new-one {
+  background-image: url("../img/new/one.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 160px;
+}
 @media (min-width: 768px) {
   #new > div ul #new-one {
     grid-area: new-one;
   }
+}
+#new > div ul #new-two {
+  background-image: url("../img/new/two.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 160px;
 }
 @media (min-width: 768px) {
   #new > div ul #new-two {
     grid-area: new-two;
   }
 }
+#new > div ul #new-three {
+  background-image: url("../img/new/three.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 160px;
+}
 @media (min-width: 768px) {
   #new > div ul #new-three {
     grid-area: new-three;
   }
 }
+#new > div ul #new-four {
+  background-image: url("../img/new/four.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 160px;
+}
 @media (min-width: 768px) {
   #new > div ul #new-four {
     grid-area: new-four;
   }
+}
+#new > div ul #new-five {
+  background-image: url("../img/new/five.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 160px;
 }
 @media (min-width: 768px) {
   #new > div ul #new-five {

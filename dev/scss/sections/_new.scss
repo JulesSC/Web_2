@@ -40,9 +40,7 @@
             li{
                 background-color: $black;
                 color: $white;
-                img {
-                    width: 100%;
-                }
+
                 section {
                     display: grid;
                     grid-template-columns: 16px auto 16px;
@@ -53,30 +51,55 @@
                 }
             }
             #new-one {
+                background-image: url("../img/new/one.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+
                 @include md {
                     grid-area: new-one;
                 }
             }
 
             #new-two {
+                background-image: url("../img/new/two.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+
                 @include md {
                     grid-area: new-two;
                 }
             }
 
             #new-three {
+                background-image: url("../img/new/three.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+
                 @include md {
                     grid-area: new-three;
                 }
             }
 
             #new-four {
+                background-image: url("../img/new/four.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+
                 @include md {
                     grid-area: new-four;
                 }
             }
 
             #new-five {
+                background-image: url("../img/new/five.jpg");
+                background-position: center;
+                background-size: cover;
+                height: 160px;
+
                 @include md {
                     grid-area: new-five;
                 }
