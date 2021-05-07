@@ -11,7 +11,28 @@ header{
         grid-template-columns: 32px auto 32px;
     }
 
-    >div{
+    div{
         grid-area: header;
+
+        background-position: center;
+        background-size: cover;
+        border: 4px $white solid;
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+
+        @include md{
+            height: 45px;
+            width: 45px;
+        }
+
+        @include lg{
+            height: 55px;
+            width: 55px;
+        }
+
+        section{
+            background-image: url("../img/header/bmw_logo.svg");
+        }
     }
 }

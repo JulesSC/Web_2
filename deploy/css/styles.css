@@ -446,8 +446,29 @@ header {
     grid-template-columns: 32px auto 32px;
   }
 }
-header > div {
+header div {
   grid-area: header;
+  background-position: center;
+  background-size: cover;
+  border: 4px #fff solid;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  header div {
+    height: 45px;
+    width: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  header div {
+    height: 55px;
+    width: 55px;
+  }
+}
+header div section {
+  background-image: url("../img/header/bmw_logo.svg");
 }
 
 /* =============
@@ -578,6 +599,9 @@ footer > div {
 /* =============
     Planning
 ============= */
+#planning {
+  background-color: #000;
+}
 @media (min-width: 768px) {
   #planning {
     display: grid;
@@ -610,6 +634,26 @@ footer > div {
 }
 #planning ul li > div {
   grid-area: planning-content;
+}
+#planning ul li > div section div {
+  background-position: center;
+  background-size: cover;
+  border: 4px #fff solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #planning ul li > div section div {
+    height: 113px;
+    width: 113px;
+  }
+}
+#planning ul li > div section #planning-left {
+  background-image: url("../img/icons/trade_in.jpg");
+}
+#planning ul li > div section #planning-right {
+  background-image: url("../img/icons/check_credit.jpg");
 }
 
 /* =============

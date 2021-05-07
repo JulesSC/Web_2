@@ -2,6 +2,8 @@
     Planning
 ============= */
 #planning{
+background-color: $black;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -30,7 +32,31 @@
             color: $white;
             
             >div{
-                grid-area: planning-content;  
+                grid-area: planning-content;
+                
+                section{
+                    div{
+                        background-position: center;
+                        background-size: cover;
+                        border: 4px $white solid;
+                        height: 85px;
+                        width: 85px;
+                        border-radius: 100%;
+
+                        @include md{
+                            height: 113px;
+                            width: 113px;
+                        }
+                    }
+
+                    #planning-left{
+                        background-image: url("../img/icons/trade_in.jpg");
+                    }
+
+                    #planning-right{
+                        background-image: url("../img/icons/check_credit.jpg");
+                    }
+                }
             }
         }
     }
