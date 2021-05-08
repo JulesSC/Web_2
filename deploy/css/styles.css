@@ -354,6 +354,7 @@ template {
 ============= */
 body {
   background-color: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
 figure {
@@ -535,6 +536,19 @@ footer > div {
 }
 #search > div {
   grid-area: search;
+}
+#search > div form input {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #search > div form input {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #search > div form input {
+    font-size: 2.1875rem;
+  }
 }
 
 /* =============

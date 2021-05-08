@@ -13,5 +13,19 @@
 
     >div{
         grid-area: search;
+
+        form{
+            input{
+                font-size: rem-calc(16px);
+
+                @include md{
+                    font-size: rem-calc(30px);
+                }
+
+                @include lg{
+                    font-size: rem-calc(35px);
+                }
+            }
+        }
     }
 }
