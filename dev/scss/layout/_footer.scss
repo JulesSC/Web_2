@@ -45,5 +45,32 @@ footer {
                 grid-area: follow;
             }
         }
+
+        section{
+            h3{
+                font-size: rem-calc(20);
+                font-weight: 500;
+            }
+            section{
+                h4{
+                    font-size: rem-calc(16);
+                    font-weight: 400;
+                }
+                ul{
+                    li{
+                        address{
+                            font-size: rem-calc(12);
+                            font-weight: 400;
+                            font-family: 'DM Sans', sans-serif;
+                        }
+                        a{
+                            font-size: rem-calc(12);
+                            font-weight: 400;
+                            font-family: 'DM Sans', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

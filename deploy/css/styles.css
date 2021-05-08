@@ -519,6 +519,24 @@ footer > div {
     grid-area: follow;
   }
 }
+footer > div section h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+footer > div section section h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer > div section section ul li address {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+footer > div section section ul li a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
 
 /* =============
     Search
@@ -549,6 +567,24 @@ footer > div {
   #search > div form input {
     font-size: 2.1875rem;
     font-weight: 400;
+  }
+}
+#search > div form button i {
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  #search > div form button i {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #search > div form button i {
+    font-size: 2.375rem;
+  }
+}
+@media (min-width: 1440px) {
+  #search > div form button i {
+    font-size: 2.625rem;
   }
 }
 
