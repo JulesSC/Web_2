@@ -540,26 +540,26 @@ footer > div {
 /* =============
     Hero
 ============= */
-#hero {
+#hero #hero-image {
   background-image: url("../img/hero/hero.jpg");
   background-position: center 675px;
   background-size: cover;
   height: 480px;
 }
 @media (min-width: 768px) {
-  #hero {
+  #hero #hero-image {
     background-position: center 850px;
     height: 580px;
   }
 }
 @media (min-width: 1024px) {
-  #hero {
+  #hero #hero-image {
     background-position: center 999px;
     height: 730px;
   }
 }
 @media (min-width: 1440px) {
-  #hero {
+  #hero #hero-image {
     height: 100vh;
   }
 }
