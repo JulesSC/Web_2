@@ -6,6 +6,15 @@ footer {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     background-color: $black;
+    padding: 20px 18px;
+
+    @include md{
+        padding: 25px 18px;
+    }
+
+    @include lg{
+        padding: 40px 18px;
+    }
 
     @include xl{
         grid-template-columns: auto 1000px auto;
@@ -28,36 +37,54 @@ footer {
             grid-template-areas: "locations news follow";
         }
 
-        #locations {
-            @include md{
-                grid-area: locations;
-            }
-        }
-
-        #news {
-            @include md{
-                grid-area: news;
-            }
-        }
-
-        #follow {
-            @include md{
-                grid-area: follow;
-            }
-        }
-
         section{
             h3{
                 font-size: rem-calc(20);
                 font-weight: 500;
+                margin: 20px 0px;
+
+                @include md{
+                    margin-bottom: 24px 0px;
+                }
+
+                @include lg{
+                    margin-bottom: 28px 0px;
+                }
             }
             section{
                 h4{
                     font-size: rem-calc(16);
                     font-weight: 400;
+                    margin-bottom: 18px;
+
+                    @include md{
+                        margin-bottom: 24px;
+                    }
+    
+                    @include lg{
+                        margin-bottom: 28px;
+                    }
                 }
                 ul{
                     li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 18px;
+
+                        @include md{
+                            margin-bottom: 24px;
+                        }
+        
+                        @include lg{
+                            margin-bottom: 28px;
+                        }
+
+                        div{
+                            i{
+                                margin-right: 18px;
+                            }
+                        }
+
                         address{
                             font-size: rem-calc(12);
                             font-weight: 400;
@@ -69,6 +96,49 @@ footer {
                             font-family: 'DM Sans', sans-serif;
                         }
                     }
+                }
+            }
+        }
+
+        #locations {
+            @include md{
+                grid-area: locations;
+            }
+        }
+
+        #news {
+            @include md{
+                grid-area: news;
+            }
+
+            input{
+                display: block;
+                margin-bottom: 20px;
+
+                @include md{
+                    margin-bottom: 24px;
+                }
+
+                @include lg{
+                    margin-bottom: 28px;
+                }
+            }
+
+            // button{
+            //     margin-left: auto;
+            // }
+        }
+
+        #follow {
+            @include md{
+                grid-area: follow;
+            }
+
+            ul{
+                display: flex;
+
+                li{
+                    margin-right: 24px;
                 }
             }
         }

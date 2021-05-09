@@ -6,6 +6,7 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     background-color: $white;
+    padding: 16px;
 
     @include xl{
         grid-template-columns: auto 1000px auto;
@@ -19,17 +20,17 @@
             
             input{
                 font-size: rem-calc(16px);
-                padding-right: 245px;
+                padding-right: 230px;
 
                 @include md{
                     font-size: rem-calc(30px);
-                    padding-right: 350px;
+                    padding-right: 335px;
                 }
 
                 @include lg{
                     font-size: rem-calc(35px);
                     font-weight: 400;
-                    padding-right: 540px;
+                    padding-right: 525px;
                 }
             }
 
