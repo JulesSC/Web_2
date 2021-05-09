@@ -30,15 +30,28 @@ background-color: $black;
             grid-template-areas: ". planning-content .";
             background-color: $black;
             color: $white;
+            padding: 15px;
+            margin: 25px 15px;
+
+            @include md{
+                padding: 30px 20px;
+            }
+
+            @include lg{
+                padding: 50px 0px 20px 15px;
+            }
             
             >div{
                 grid-area: planning-content;
+                display: flex;
                 
                 article{
                     div{
+                        
                         h1{
                             font-size: rem-calc(22);
                             font-weight: 400;
+                            margin-bottom: 25px;
 
                             @include md{
                                 font-size: rem-calc(28);
@@ -64,6 +77,8 @@ background-color: $black;
                     }
                 }
                 section{
+                    margin-left: auto;
+
                     div{
                         background-position: center;
                         background-size: cover;

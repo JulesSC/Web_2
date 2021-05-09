@@ -722,13 +722,27 @@ footer > div section section ul li a {
   grid-template-areas: ". planning-content .";
   background-color: #000;
   color: #fff;
+  padding: 15px;
+  margin: 25px 15px;
+}
+@media (min-width: 768px) {
+  #planning ul li {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #planning ul li {
+    padding: 50px 0px 20px 15px;
+  }
 }
 #planning ul li > div {
   grid-area: planning-content;
+  display: flex;
 }
 #planning ul li > div article div h1 {
   font-size: 1.375rem;
   font-weight: 400;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   #planning ul li > div article div h1 {
@@ -753,6 +767,9 @@ footer > div section section ul li a {
   #planning ul li > div article div button {
     font-size: 1.25rem;
   }
+}
+#planning ul li > div section {
+  margin-left: auto;
 }
 #planning ul li > div section div {
   background-position: center;
