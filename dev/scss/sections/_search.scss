@@ -15,20 +15,26 @@
         grid-area: search;
 
         form{
+            display: flex;
+            
             input{
                 font-size: rem-calc(16px);
+                padding-right: 245px;
 
                 @include md{
                     font-size: rem-calc(30px);
+                    padding-right: 350px;
                 }
 
                 @include lg{
                     font-size: rem-calc(35px);
                     font-weight: 400;
+                    padding-right: 540px;
                 }
             }
 
             button{
+                margin-left: auto;
                 i{
                     font-size: rem-calc(14px);
 

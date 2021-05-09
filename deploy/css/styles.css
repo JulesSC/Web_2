@@ -395,7 +395,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -555,19 +555,28 @@ footer > div section section ul li a {
 #search > div {
   grid-area: search;
 }
+#search > div form {
+  display: flex;
+}
 #search > div form input {
   font-size: 1rem;
+  padding-right: 245px;
 }
 @media (min-width: 768px) {
   #search > div form input {
     font-size: 1.875rem;
+    padding-right: 350px;
   }
 }
 @media (min-width: 1024px) {
   #search > div form input {
     font-size: 2.1875rem;
     font-weight: 400;
+    padding-right: 540px;
   }
+}
+#search > div form button {
+  margin-left: auto;
 }
 #search > div form button i {
   font-size: 0.875rem;
@@ -635,6 +644,9 @@ footer > div section section ul li a {
 }
 #hero ul li a {
   grid-area: hero-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #hero ul li a div h2 {
   font-size: 1.125rem;
@@ -656,6 +668,13 @@ footer > div section section ul li a {
 }
 #hero ul li a div p span {
   font-weight: 500;
+}
+#hero ul li a .hero-left {
+  padding: 15px 0px 20px 20px;
+}
+#hero ul li a .hero-right {
+  margin-left: auto;
+  padding: 30px 15px 30px 0px;
 }
 @media (min-width: 1440px) {
   #hero ul #hero-sub-one {
