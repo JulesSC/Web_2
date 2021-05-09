@@ -7,6 +7,7 @@ footer {
     grid-template-areas: ". footer .";
     background-color: $black;
     padding: 20px 18px;
+    border-top: 2px $white solid;
 
     @include md{
         padding: 25px 18px;
@@ -23,6 +24,7 @@ footer {
     >div {
         grid-area: footer;
         color: $white;
+        gap: 16px;
 
         @include md {
             display: grid;
@@ -52,17 +54,18 @@ footer {
                 }
             }
             section{
+
                 h4{
                     font-size: rem-calc(16);
                     font-weight: 400;
-                    margin-bottom: 18px;
+                    margin: 18px 0px;
 
                     @include md{
-                        margin-bottom: 24px;
+                        margin: 24px 0px;
                     }
     
                     @include lg{
-                        margin-bottom: 28px;
+                        margin: 28px 0px;
                     }
                 }
                 ul{
@@ -90,10 +93,20 @@ footer {
                             font-weight: 400;
                             font-family: 'DM Sans', sans-serif;
                         }
+                        
                         a{
                             font-size: rem-calc(12);
                             font-weight: 400;
                             font-family: 'DM Sans', sans-serif;
+                        }
+
+                        a:link, a:visited{
+                            color: $white;
+                            transition: 0.25s;
+                        }
+            
+                        a:hover, a:active{
+                            color: $grey;
                         }
                     }
                 }
@@ -103,6 +116,10 @@ footer {
         #locations {
             @include md{
                 grid-area: locations;
+            }
+
+            .border{
+                border-bottom: 2px $white solid;
             }
         }
 
@@ -114,13 +131,16 @@ footer {
             input{
                 display: block;
                 margin-bottom: 20px;
+                // padding-right: 190px;
 
                 @include md{
                     margin-bottom: 24px;
+                    // padding-right: 255px;
                 }
 
                 @include lg{
                     margin-bottom: 28px;
+                    // padding-right: 220px;
                 }
             }
 
@@ -134,11 +154,25 @@ footer {
                 grid-area: follow;
             }
 
+            @include lg{
+                text-align: right;
+            }
+
             ul{
                 display: flex;
+                // justify-content: left;
 
                 li{
                     margin-right: 24px;
+
+                    a:link, a:visited{
+                        color: $white;
+                        transition: 0.25s;
+                    }
+        
+                    a:hover, a:active{
+                        color: $grey;
+                    }
                 }
             }
         }

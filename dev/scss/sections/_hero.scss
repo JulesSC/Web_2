@@ -33,13 +33,22 @@
             grid-template-columns: 50% auto;
         }
 
-        background-color:$white;
+        background-color:$grey;
         
         li{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
+            a:link, a:visited{
+                color: $black;
+                transition: 0.25s;
+            }
+
+            a:hover, a:active{
+                color: $darkGrey;
+            }
+            
             a{
                 grid-area: hero-content;
                 display: flex;

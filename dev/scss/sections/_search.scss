@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
-    background-color: $white;
+    background-color: $grey;
     padding: 16px;
 
     @include xl{
@@ -36,6 +36,8 @@
 
             button{
                 margin-left: auto;
+                background-color: $grey;
+                border-color: $grey;
                 i{
                     font-size: rem-calc(14px);
 

@@ -388,6 +388,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -441,6 +445,7 @@ header {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #000;
+  padding: 20px;
 }
 @media (min-width: 768px) {
   header {
@@ -481,6 +486,7 @@ footer {
   grid-template-areas: ". footer .";
   background-color: #000;
   padding: 20px 18px;
+  border-top: 2px #fff solid;
 }
 @media (min-width: 768px) {
   footer {
@@ -500,6 +506,7 @@ footer {
 footer > div {
   grid-area: footer;
   color: #fff;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -533,16 +540,16 @@ footer > div section h3 {
 footer > div section section h4 {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 18px;
+  margin: 18px 0px;
 }
 @media (min-width: 768px) {
   footer > div section section h4 {
-    margin-bottom: 24px;
+    margin: 24px 0px;
   }
 }
 @media (min-width: 1024px) {
   footer > div section section h4 {
-    margin-bottom: 28px;
+    margin: 28px 0px;
   }
 }
 footer > div section section ul li {
@@ -573,10 +580,20 @@ footer > div section section ul li a {
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
 }
+footer > div section section ul li a:link, footer > div section section ul li a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+footer > div section section ul li a:hover, footer > div section section ul li a:active {
+  color: #EEEDED;
+}
 @media (min-width: 768px) {
   footer > div #locations {
     grid-area: locations;
   }
+}
+footer > div #locations .border {
+  border-bottom: 2px #fff solid;
 }
 @media (min-width: 768px) {
   footer > div #news {
@@ -602,11 +619,23 @@ footer > div #news input {
     grid-area: follow;
   }
 }
+@media (min-width: 1024px) {
+  footer > div #follow {
+    text-align: right;
+  }
+}
 footer > div #follow ul {
   display: flex;
 }
 footer > div #follow ul li {
   margin-right: 24px;
+}
+footer > div #follow ul li a:link, footer > div #follow ul li a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+footer > div #follow ul li a:hover, footer > div #follow ul li a:active {
+  color: #EEEDED;
 }
 
 /* =============
@@ -616,7 +645,7 @@ footer > div #follow ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
-  background-color: #fff;
+  background-color: #EEEDED;
   padding: 16px;
 }
 @media (min-width: 1440px) {
@@ -649,6 +678,8 @@ footer > div #follow ul li {
 }
 #search > div form button {
   margin-left: auto;
+  background-color: #EEEDED;
+  border-color: #EEEDED;
 }
 #search > div form button i {
   font-size: 0.875rem;
@@ -696,7 +727,7 @@ footer > div #follow ul li {
   }
 }
 #hero ul {
-  background-color: #fff;
+  background-color: #EEEDED;
 }
 @media (min-width: 768px) {
   #hero ul {
@@ -713,6 +744,13 @@ footer > div #follow ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+}
+#hero ul li a:link, #hero ul li a:visited {
+  color: #000;
+  transition: 0.25s;
+}
+#hero ul li a:hover, #hero ul li a:active {
+  color: #787676;
 }
 #hero ul li a {
   grid-area: hero-content;
