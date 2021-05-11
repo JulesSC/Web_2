@@ -9,15 +9,15 @@ footer {
     padding: 20px 18px;
     border-top: 2px $white solid;
 
-    @include md{
+    @include md {
         padding: 25px 18px;
     }
 
-    @include lg{
+    @include lg {
         padding: 40px 18px;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
     }
 
@@ -30,7 +30,7 @@ footer {
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas: "locations news"
-                                 "locations follow";
+                "locations follow";
         }
 
         @include lg {
@@ -39,73 +39,76 @@ footer {
             grid-template-areas: "locations news follow";
         }
 
-        section{
-            h3{
+        section {
+            h3 {
                 font-size: rem-calc(20);
                 font-weight: 500;
                 margin: 20px 0px;
 
-                @include md{
+                @include md {
                     margin-bottom: 24px 0px;
                 }
 
-                @include lg{
+                @include lg {
                     margin-bottom: 28px 0px;
                 }
             }
-            section{
 
-                h4{
+            section {
+                h4 {
                     font-size: rem-calc(16);
                     font-weight: 400;
                     margin: 18px 0px;
 
-                    @include md{
+                    @include md {
                         margin: 24px 0px;
                     }
-    
-                    @include lg{
+
+                    @include lg {
                         margin: 28px 0px;
                     }
                 }
-                ul{
-                    li{
+
+                ul {
+                    li {
                         display: flex;
                         align-items: center;
                         margin-bottom: 18px;
 
-                        @include md{
+                        @include md {
                             margin-bottom: 24px;
                         }
-        
-                        @include lg{
+
+                        @include lg {
                             margin-bottom: 28px;
                         }
 
-                        div{
-                            i{
+                        div {
+                            i {
                                 margin-right: 18px;
                             }
                         }
 
-                        address{
-                            font-size: rem-calc(12);
-                            font-weight: 400;
-                            font-family: 'DM Sans', sans-serif;
-                        }
-                        
-                        a{
+                        address {
                             font-size: rem-calc(12);
                             font-weight: 400;
                             font-family: 'DM Sans', sans-serif;
                         }
 
-                        a:link, a:visited{
+                        a {
+                            font-size: rem-calc(12);
+                            font-weight: 400;
+                            font-family: 'DM Sans', sans-serif;
+                        }
+
+                        a:link,
+                        a:visited {
                             color: $white;
                             transition: 0.25s;
                         }
-            
-                        a:hover, a:active{
+
+                        a:hover,
+                        a:active {
                             color: $grey;
                         }
                     }
@@ -114,69 +117,71 @@ footer {
         }
 
         #locations {
-            @include md{
+            @include md {
                 grid-area: locations;
             }
 
-            .border{
+            .border {
                 border-bottom: 2px $white solid;
             }
         }
 
         #news {
-            @include md{
+            @include md {
                 grid-area: news;
             }
 
-            form{
-                // display: flex;
-
-                input{
+            form {
+                input {
                     display: block;
                     margin-bottom: 20px;
-                    // width: 100%;
-                    // padding-right: 190px;
-    
-                    @include md{
+                    width: 96%;
+
+                    @include md {
                         margin-bottom: 24px;
-                        // padding-right: 255px;
                     }
-    
-                    @include lg{
+
+                    @include lg {
                         margin-bottom: 28px;
-                        // padding-right: 220px;
                     }
                 }
-    
-                // button{
-                //     margin-left: auto;
-                // }
+
+                button {
+                    display: flex;
+                    margin-left: auto;
+                }
             }
         }
 
         #follow {
-            @include md{
+            @include md {
                 grid-area: follow;
             }
 
-            @include lg{
+            @include lg {
                 text-align: right;
+                justify-content: flex-end;
             }
 
-            ul{
+            ul {
                 display: flex;
-                // justify-content: left;
 
-                li{
+                @include lg {
+                    justify-content: flex-end;
+                }
+
+                li {
                     margin-right: 24px;
 
-                    a:link, a:visited{
+                    a:link,
+                    a:visited {
                         color: $white;
                         transition: 0.25s;
-                    }
-        
-                    a:hover, a:active{
-                        color: $grey;
+
+                        &:hover,
+                        &:active {
+                            color: $grey;
+                        }
                     }
                 }
             }

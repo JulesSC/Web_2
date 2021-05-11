@@ -580,11 +580,13 @@ footer > div section section ul li a {
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
 }
-footer > div section section ul li a:link, footer > div section section ul li a:visited {
+footer > div section section ul li a:link,
+footer > div section section ul li a:visited {
   color: #fff;
   transition: 0.25s;
 }
-footer > div section section ul li a:hover, footer > div section section ul li a:active {
+footer > div section section ul li a:hover,
+footer > div section section ul li a:active {
   color: #EEEDED;
 }
 @media (min-width: 768px) {
@@ -603,6 +605,7 @@ footer > div #locations .border {
 footer > div #news form input {
   display: block;
   margin-bottom: 20px;
+  width: 96%;
 }
 @media (min-width: 768px) {
   footer > div #news form input {
@@ -614,6 +617,10 @@ footer > div #news form input {
     margin-bottom: 28px;
   }
 }
+footer > div #news form button {
+  display: flex;
+  margin-left: auto;
+}
 @media (min-width: 768px) {
   footer > div #follow {
     grid-area: follow;
@@ -622,19 +629,28 @@ footer > div #news form input {
 @media (min-width: 1024px) {
   footer > div #follow {
     text-align: right;
+    justify-content: flex-end;
   }
 }
 footer > div #follow ul {
   display: flex;
 }
+@media (min-width: 1024px) {
+  footer > div #follow ul {
+    justify-content: flex-end;
+  }
+}
 footer > div #follow ul li {
   margin-right: 24px;
 }
-footer > div #follow ul li a:link, footer > div #follow ul li a:visited {
+footer > div #follow ul li a:link,
+footer > div #follow ul li a:visited {
   color: #fff;
   transition: 0.25s;
 }
-footer > div #follow ul li a:hover, footer > div #follow ul li a:active {
+footer > div #follow ul li a:link:hover, footer > div #follow ul li a:link:active,
+footer > div #follow ul li a:visited:hover,
+footer > div #follow ul li a:visited:active {
   color: #EEEDED;
 }
 
