@@ -128,25 +128,30 @@ footer {
                 grid-area: news;
             }
 
-            input{
-                display: block;
-                margin-bottom: 20px;
-                // padding-right: 190px;
+            form{
+                // display: flex;
 
-                @include md{
-                    margin-bottom: 24px;
-                    // padding-right: 255px;
+                input{
+                    display: block;
+                    margin-bottom: 20px;
+                    // width: 100%;
+                    // padding-right: 190px;
+    
+                    @include md{
+                        margin-bottom: 24px;
+                        // padding-right: 255px;
+                    }
+    
+                    @include lg{
+                        margin-bottom: 28px;
+                        // padding-right: 220px;
+                    }
                 }
-
-                @include lg{
-                    margin-bottom: 28px;
-                    // padding-right: 220px;
-                }
+    
+                // button{
+                //     margin-left: auto;
+                // }
             }
-
-            // button{
-            //     margin-left: auto;
-            // }
         }
 
         #follow {

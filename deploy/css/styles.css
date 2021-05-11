@@ -600,17 +600,17 @@ footer > div #locations .border {
     grid-area: news;
   }
 }
-footer > div #news input {
+footer > div #news form input {
   display: block;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  footer > div #news input {
+  footer > div #news form input {
     margin-bottom: 24px;
   }
 }
 @media (min-width: 1024px) {
-  footer > div #news input {
+  footer > div #news form input {
     margin-bottom: 28px;
   }
 }
@@ -646,7 +646,7 @@ footer > div #follow ul li a:hover, footer > div #follow ul li a:active {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   background-color: #EEEDED;
-  padding: 16px;
+  padding: 16px 0px;
 }
 @media (min-width: 1440px) {
   #search {
@@ -661,25 +661,31 @@ footer > div #follow ul li a:hover, footer > div #follow ul li a:active {
 }
 #search > div form input {
   font-size: 1rem;
-  padding-right: 230px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #search > div form input {
     font-size: 1.875rem;
-    padding-right: 335px;
   }
 }
 @media (min-width: 1024px) {
   #search > div form input {
     font-size: 2.1875rem;
     font-weight: 400;
-    padding-right: 525px;
   }
 }
 #search > div form button {
   margin-left: auto;
   background-color: #EEEDED;
   border-color: #EEEDED;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px;
 }
 #search > div form button i {
   font-size: 0.875rem;
@@ -785,6 +791,14 @@ footer > div #follow ul li a:hover, footer > div #follow ul li a:active {
 #hero ul li a .hero-right {
   margin-left: auto;
   padding: 30px 15px 30px 0px;
+}
+#hero ul li a .hero-right h5 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero ul li a .hero-right h5 {
+    display: inline;
+  }
 }
 @media (min-width: 1440px) {
   #hero ul #hero-sub-one {
