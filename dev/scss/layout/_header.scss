@@ -15,8 +15,6 @@ header{
     div{
         grid-area: header;
 
-        background-position: center;
-        background-size: cover;
         border: 4px $white solid;
         height: 35px;
         width: 35px;
@@ -30,10 +28,6 @@ header{
         @include lg{
             height: 55px;
             width: 55px;
-        }
-
-        section{
-            background-image: url("../img/header/bmw_logo.svg");
         }
     }
 }

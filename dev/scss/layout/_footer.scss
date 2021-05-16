@@ -93,6 +93,7 @@ footer {
                             font-size: rem-calc(12);
                             font-weight: 400;
                             font-family: 'DM Sans', sans-serif;
+                            font-style: normal;
                         }
 
                         a {
@@ -183,6 +184,9 @@ footer {
                             color: $grey;
                         }
                     }
+                }
+                #none{
+                    margin-right: 0px;
                 }
             }
         }

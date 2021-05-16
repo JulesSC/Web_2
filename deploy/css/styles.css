@@ -454,8 +454,6 @@ header {
 }
 header div {
   grid-area: header;
-  background-position: center;
-  background-size: cover;
   border: 4px #fff solid;
   height: 35px;
   width: 35px;
@@ -472,9 +470,6 @@ header div {
     height: 55px;
     width: 55px;
   }
-}
-header div section {
-  background-image: url("../img/header/bmw_logo.svg");
 }
 
 /* =============
@@ -574,6 +569,7 @@ footer > div section section ul li address {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
+  font-style: normal;
 }
 footer > div section section ul li a {
   font-size: 0.75rem;
@@ -652,6 +648,9 @@ footer > div #follow ul li a:link:hover, footer > div #follow ul li a:link:activ
 footer > div #follow ul li a:visited:hover,
 footer > div #follow ul li a:visited:active {
   color: #EEEDED;
+}
+footer > div #follow ul #none {
+  margin-right: 0px;
 }
 
 /* =============
@@ -739,7 +738,7 @@ footer > div #follow ul li a:visited:active {
 }
 @media (min-width: 1024px) {
   #hero #hero-image {
-    background-position: center 999px;
+    background-position: center 1280px;
     height: 730px;
   }
 }
