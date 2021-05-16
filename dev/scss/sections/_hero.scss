@@ -2,94 +2,97 @@
     Hero
 ============= */
 #hero {
-    #hero-image{
+    #hero-image {
         background-image: url("../img/hero/hero.jpg");
         background-position: center 675px;
         background-size: cover;
         height: 480px;
-    
-        @include md{
+
+        @include md {
             background-position: center 850px;
             height: 580px;
         }
-    
-        @include lg{
+
+        @include lg {
             background-position: center 1280px;
             height: 730px;
         }
-    
-        @include xl{
+
+        @include xl {
             height: 100vh;
         }
     }
-    
-    ul{
-        @include md{
+
+    ul {
+        @include md {
             display: grid;
             grid-template-columns: 40% auto;
         }
-        
-        @include lg{
+
+        @include lg {
             grid-template-columns: 50% auto;
         }
 
         background-color:$grey;
-        
-        li{
+
+        li {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
 
-            a:link, a:visited{
+            a:link,
+            a:visited {
                 color: $black;
                 transition: 0.25s;
             }
 
-            a:hover, a:active{
+            a:hover,
+            a:active {
                 color: $darkGrey;
             }
-            
-            a{
+
+            a {
                 grid-area: hero-content;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                div{
-                    h2{
+                div {
+                    h2 {
                         font-size: rem-calc(18);
                         font-family: 'DM Sans', sans-serif;
 
-                        @include lg{
+                        @include lg {
                             font-size: rem-calc(22);
                         }
 
-                        @include xl{
+                        @include xl {
                             font-size: rem-calc(25);
                         }
                     }
-                    p{
+
+                    p {
                         font-size: rem-calc(18);
                         font-family: 'DM Sans', sans-serif;
 
-                        span{
+                        span {
                             font-weight: 500;
                         }
                     }
                 }
 
-                .hero-left{
+                .hero-left {
                     padding: 15px 0px 20px 20px;
                 }
-                
-                .hero-right{
+
+                .hero-right {
                     margin-left: auto;
                     padding: 30px 15px 30px 0px;
 
-                    h5{
+                    h5 {
                         display: none;
 
-                        @include lg{
+                        @include lg {
                             display: inline;
                         }
                     }
@@ -97,13 +100,14 @@
             }
         }
 
-        #hero-sub-one{
-            @include xl{
+        #hero-sub-one {
+            @include xl {
                 grid-template-columns: auto 480px 16px;
             }
         }
-        #hero-sub-two{
-            @include xl{
+
+        #hero-sub-two {
+            @include xl {
                 grid-template-columns: 16px 480px auto;
             }
         }

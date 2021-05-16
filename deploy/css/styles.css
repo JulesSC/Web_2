@@ -766,11 +766,13 @@ footer > div #follow ul #none {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
 }
-#hero ul li a:link, #hero ul li a:visited {
+#hero ul li a:link,
+#hero ul li a:visited {
   color: #000;
   transition: 0.25s;
 }
-#hero ul li a:hover, #hero ul li a:active {
+#hero ul li a:hover,
+#hero ul li a:active {
   color: #787676;
 }
 #hero ul li a {

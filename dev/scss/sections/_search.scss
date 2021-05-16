@@ -1,24 +1,24 @@
 /* =============
     Search
 ============= */
-#search{
+#search {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     background-color: $grey;
     padding: 16px 0px;
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
     }
 
-    >div{
+    >div {
         grid-area: search;
 
-        form{
+        form {
             display: flex;
-            
-            input{
+
+            input {
                 font-size: rem-calc(16px);
                 background-color: transparent;
                 border: none;
@@ -26,17 +26,17 @@
                 border-radius: 0px;
                 width: 100%;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(30px);
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(35px);
                     font-weight: 400;
                 }
             }
 
-            button{
+            button {
                 margin-left: auto;
                 background-color: $grey;
                 border-color: $grey;
@@ -45,18 +45,18 @@
                 padding: 10px 15px;
                 margin-left: 10px;
 
-                i{
+                i {
                     font-size: rem-calc(14px);
 
-                    @include md{
+                    @include md {
                         font-size: rem-calc(30px);
                     }
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(38px);
                     }
 
-                    @include xl{
+                    @include xl {
                         font-size: rem-calc(42px);
                     }
                 }

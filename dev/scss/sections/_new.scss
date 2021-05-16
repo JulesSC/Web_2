@@ -11,11 +11,11 @@
         grid-template-areas: ". new .";
         padding-bottom: 62px;
     }
-    
+
     @include lg {
         padding-bottom: 82px;
     }
-    
+
     @include xl {
         grid-template-columns: auto 1000px auto;
         padding-bottom: 90px;
@@ -30,7 +30,7 @@
             color: $white;
             font-size: rem-calc(20);
             font-weight: 400;
-            justify:left;
+            justify: left;
             margin: 22px 0px 18px 18px;
 
             @include md {
@@ -73,12 +73,12 @@
                     >div {
                         grid-area: new-content;
 
-                        h2{
+                        h2 {
                             font-size: rem-calc(24);
                             font-weight: 400;
                         }
 
-                        p{
+                        p {
                             font-size: rem-calc(16);
                             font-weight: 400;
                             font-family: 'DM Sans', sans-serif;

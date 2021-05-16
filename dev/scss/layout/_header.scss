@@ -1,18 +1,18 @@
 /* =============
     Header
 ============= */
-header{
+header {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
     background-color: $black;
     padding: 20px;
 
-    @include md{
+    @include md {
         grid-template-columns: 32px auto 32px;
     }
 
-    div{
+    div {
         grid-area: header;
 
         border: 4px $white solid;
@@ -20,12 +20,12 @@ header{
         width: 35px;
         border-radius: 100%;
 
-        @include md{
+        @include md {
             height: 45px;
             width: 45px;
         }
 
-        @include lg{
+        @include lg {
             height: 55px;
             width: 55px;
         }

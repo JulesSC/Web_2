@@ -1,61 +1,66 @@
 /* =============
     Gallery
 ============= */
-#gallery{
-    @include lg{
+#gallery {
+    @include lg {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery ."
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1350px auto;
     }
-    
-    ul{
+
+    ul {
         grid-area: gallery;
         display: grid;
         grid-template-rows: 355px 485px;
-        
-        @include md{
+
+        @include md {
             grid-template-columns: 50% auto;
             grid-template-rows: 595px;
         }
-        @include lg{
+
+        @include lg {
             grid-template-columns: 60% auto;
         }
-        @include xl{
+
+        @include xl {
             grid-template-columns: 65% auto;
             grid-template-rows: repeat(2, 375px);
             grid-template-areas: "gallery-1 gallery-2"
-                                 "gallery-1 gallery-3";
+                "gallery-1 gallery-3";
         }
 
-        li{
+        li {
             background-position: center;
-            background-size: cover; 
+            background-size: cover;
         }
 
-        #gallery-1{
-            
+        #gallery-1 {
+
             background-image: url("../img/gallery/left.jpg");
             background-position: right 80%;
 
-            @include xl{
+            @include xl {
                 grid-area: gallery-1;
             }
         }
-        #gallery-2{
+
+        #gallery-2 {
             background-image: url("../img/gallery/upper.jpg");
             background-position: center bottom;
 
-            @include xl{
+            @include xl {
                 grid-area: gallery-2;
             }
         }
 
-        #gallery-3{
+        #gallery-3 {
             display: none;
-            @include xl{
+
+            @include xl {
                 display: list-item;
                 background-image: url("../img/gallery/lower.jpg");
                 grid-area: gallery-3;
