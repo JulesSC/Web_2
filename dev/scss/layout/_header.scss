@@ -41,11 +41,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". header .";
-    // padding: 21px 0;
-
 
     @include md{
         padding: 24px 0;
@@ -61,21 +56,15 @@ header {
         "logo burger"
         "nav nav";
         grid-template-columns: 20% auto;
-        // grid-area: header;
 
         @include lg {
             grid-template-areas: "logo nav";
             grid-template-columns: 20% auto;
         }
 
-        // @include xl{
-        //     grid-area: header;
-        // }
-
         #logo-container {
             grid-area: logo;
             padding: 10px;
-            grid-area: header;
 
             border: 4px $white solid;
             height: 35px;
@@ -91,14 +80,6 @@ header {
                 height: 55px;
                 width: 55px;
             }
-            border: 1px solid green;
-
-           a:link, a:visited {
-                transition: 0.25s;
-
-                &:hover {
-                }
-            }
         }
 
         #burger-container {
@@ -112,37 +93,22 @@ header {
             }
 
             i {
-                // margin-left: auto;
+                margin-left: auto;
                 cursor: pointer;
-                font-size: rem-calc(30);
-                // color: $black;
+                font-size: rem-calc(25);
+                color: $black;
             }
         }
 
         #nav-container {
             background-color: $white;
-            // display: none;
+            display: none;
             grid-area: nav;
             padding: 20px 10px 10px;
-            // height: 100vh;
-
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-
 
             @include lg {
                 background-color: $white;
-                display: block;
-            }
-            ul{
-                li{
-                    color: black;
-                    
-                    a{
-                        color: black;
-                    }
-                }
+                // display: block;
             }
         }
     }

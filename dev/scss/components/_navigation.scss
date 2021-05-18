@@ -1,52 +1,48 @@
 /* =============
     Navigation
 ============= */
-// #nav-container {
-//     ul {
-//         // height: 100%;
-//         // margin-top: -20px;
+#nav-container {
+    ul {
 
-//         @include lg {
-//             display: flex;
-//             justify-content: flex-end;
-//         }
+        @include lg {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-//         li {
-//             margin-bottom: 20px;
-//             text-align: right;
+        li {
+            margin-bottom: 20px;
+            text-align: right;
 
-//             @include lg {
-//                 align-items: center;
-//                 // border-right: 2px solid $charcoal;
-//                 display: flex;
-//                 margin-bottom: 0px;
-//             }
+            @include lg {
+                align-items: center;
+                display: flex;
+                margin-bottom: 0px;
+            }
 
-//             a:link,
-//             a:visited {
-//                 color: $black;
-//                 // font-family: 'Comfortaa', cursive;
+            a:link,
+            a:visited {
+                color: $black;
+                font-family: 'DM Sans', sans-serif;
                 
-//                 text-decoration: none;
-//                 transition: 0.25s;
-//                 font-weight: 400;
-//                 font-variation-settings: "wght" 400;
+                text-decoration: none;
+                transition: 0.25s;
+                font-weight: 400;
+                font-variation-settings: "wght" 400;
                 
 
-//                 @include lg {
-//                     font-size: rem-calc(20);
-//                     padding: 0 20px;
-//                 }
+                @include lg {
+                    font-size: rem-calc(20);
+                    padding: 0 20px;
+                }
 
-//                 &:hover,
-//                 &:active {
-//                     // color: $yellow;
-//                 }
-//             }
-//         }
+                &:hover, &:active {
+                    color: $darkGrey;
+                }
+            }
+        }
 
-//         li:last-child {
-//             border: none;
-//         }
-//     }
-// }
+        li:last-child {
+            border: none;
+        }
+    }
+}
