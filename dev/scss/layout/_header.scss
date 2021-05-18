@@ -1,33 +1,149 @@
 /* =============
     Header
 ============= */
-header {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
-    background-color: $black;
-    padding: 20px;
+// header {
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". header .";
+//     background-color: $black;
+//     padding: 20px;
 
-    @include md {
-        grid-template-columns: 32px auto 32px;
+//     @include md {
+//         grid-template-columns: 32px auto 32px;
+//     }
+
+//     div {
+//         grid-area: header;
+
+//         border: 4px $white solid;
+//         height: 35px;
+//         width: 35px;
+//         border-radius: 100%;
+
+//         @include md {
+//             height: 45px;
+//             width: 45px;
+//         }
+
+//         @include lg {
+//             height: 55px;
+//             width: 55px;
+//         }
+//     }
+// }
+
+/* =============
+    Header
+============= */
+header {
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header .";
+    // padding: 21px 0;
+
+
+    @include md{
+        padding: 24px 0;
     }
 
-    div {
-        grid-area: header;
+    @include lg{
+        padding: 16px 0;
+    }
 
-        border: 4px $white solid;
-        height: 35px;
-        width: 35px;
-        border-radius: 100%;
-
-        @include md {
-            height: 45px;
-            width: 45px;
-        }
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
+        grid-template-columns: 20% auto;
+        // grid-area: header;
 
         @include lg {
-            height: 55px;
-            width: 55px;
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
+        }
+
+        // @include xl{
+        //     grid-area: header;
+        // }
+
+        #logo-container {
+            grid-area: logo;
+            padding: 10px;
+            grid-area: header;
+
+            border: 4px $white solid;
+            height: 35px;
+            width: 35px;
+            border-radius: 100%;
+
+            @include md {
+                height: 45px;
+                width: 45px;
+            }
+
+            @include lg {
+                height: 55px;
+                width: 55px;
+            }
+            border: 1px solid green;
+
+           a:link, a:visited {
+                transition: 0.25s;
+
+                &:hover {
+                }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg {
+                display: none;
+            }
+
+            i {
+                // margin-left: auto;
+                cursor: pointer;
+                font-size: rem-calc(30);
+                // color: $black;
+            }
+        }
+
+        #nav-container {
+            background-color: $white;
+            // display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+            // height: 100vh;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+
+            @include lg {
+                background-color: $white;
+                display: block;
+            }
+            ul{
+                li{
+                    color: black;
+                    
+                    a{
+                        color: black;
+                    }
+                }
+            }
         }
     }
 }
