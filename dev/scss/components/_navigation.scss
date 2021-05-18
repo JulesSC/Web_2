@@ -3,7 +3,8 @@
 ============= */
 #nav-container {
     ul {
-
+        height: 100%;
+        
         @include lg {
             display: flex;
             justify-content: flex-end;
@@ -23,7 +24,6 @@
             a:visited {
                 color: $black;
                 font-family: 'DM Sans', sans-serif;
-                
                 text-decoration: none;
                 transition: 0.25s;
                 font-weight: 400;

@@ -437,6 +437,9 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
 @media (min-width: 1024px) {
   #nav-container ul {
     display: flex;
@@ -559,6 +562,7 @@ header > div #nav-container {
 @media (min-width: 1024px) {
   header > div #nav-container {
     background-color: #fff;
+    display: block;
   }
 }
 
