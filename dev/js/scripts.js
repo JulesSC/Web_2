@@ -17,7 +17,9 @@
 
 import { skillsTrigger } from "./scrollAnimation";
 
-skillsTrigger();
+window.addEventListener('load', function(){
+    skillsTrigger();
+});
 
 // console.log("this is working!");
 
