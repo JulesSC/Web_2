@@ -1131,20 +1131,20 @@ footer > div #follow ul #none {
 }
 #new > div h1 {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 400;
   justify: left;
   margin: 22px 0px 18px 18px;
 }
 @media (min-width: 768px) {
   #new > div h1 {
-    font-size: 1.75rem;
+    font-size: 28px;
     margin: 32px 0px 26px 20px;
   }
 }
 @media (min-width: 1024px) {
   #new > div h1 {
-    font-size: 2.375rem;
+    font-size: 38px;
     margin: 52px 0px 32px 22px;
   }
 }
@@ -1176,11 +1176,11 @@ footer > div #follow ul #none {
   grid-area: new-content;
 }
 #new > div ul li section > div h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
 }
 #new > div ul li section > div p {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   margin: 22px 0px;
